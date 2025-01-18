@@ -15,6 +15,14 @@ Esta guía proporciona los pasos necesarios para configurar un clúster de Amazo
 - AWS CLI
 
 # Creación del cluser con eksctl
-- Este ejemplo muestra la creación de clústeres mediante eksctl, una herramienta CLI para crear clústeres en Amazon EKS mediante AWS CloudFormation. 
+- Este ejemplo muestra la creación de clústeres mediante **eksctl**, una herramienta CLI para crear clústeres en Amazon EKS mediante AWS CloudFormation. 
 - Weaveworks ha desarrollado eksctl como una sencilla utilidad de línea de comandos para crear y administrar clústeres de Kubernetes en Amazon EKS.
-[The official CLI for Amazon EKS](https://eksctl.io)
+- [The official CLI for Amazon EKS](https://eksctl.io)
+## ¿Qué hace eksctl (por default)?
+eksctl automatiza muchos de los pasos necesarios para la creación de clústeres y nodos de trabajo (worker node). A continuación se muestra un resumen de las tareas realizadas por eksctl cuando se ejecuta con la opción predeterminada:
+1. Creates IAM roles for the cluster and worker nodes.
+2. Creates a dedicated VPC with Classless Inter-Domain Routing (CIDR) 192.168.0.0/16.
+3. Creates a cluster and a nodegroup.
+4. Configures access to API endpoints.
+5. Installs CoreDNS.
+6. Writes a kubeconfig file for the cluster.
