@@ -28,5 +28,8 @@ eksctl automatiza muchos de los pasos necesarios para la creación de clústeres
 6. Writes a kubeconfig file for the cluster.
 ## Proceso
 1. Install eksctl
-    - [Getting started with Amazon EKS – eksctl](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html)
-2. 
+- Instalación en MacOs
+``` brew tap weaveworks/tap
+
+## Referencias
+- [Getting started with Amazon EKS – eksctl](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html)
