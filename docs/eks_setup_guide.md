@@ -29,7 +29,9 @@ eksctl automatiza muchos de los pasos necesarios para la creación de clústeres
 ## Proceso
 1. Install eksctl
 - Instalación en MacOs
-``` brew tap weaveworks/tap
+``` 
+brew tap weaveworks/tap
+```
 
 ## Referencias
 - [Getting started with Amazon EKS – eksctl](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html)
