@@ -34,6 +34,50 @@ brew tap weaveworks/tap
 brew install weaveworks/tap/eksctl
 eksctl version
 ```
+2. Ejemplo de creación del cluster
+``` 
+eksctl create cluster -f ./prod-cluster-config.yaml
+``` 
+3. Verificar el estado los nodos
+``` 
+kubectl get nodes
+``` 
+### Declarative or Imperative
+1. You can create a configuration file for use with eksctl (modo Declarativo)
+``` 
+eksctl create cluster -f cluster.yaml
+``` 
+2. You can customize the command by adding arguments
+```
+eksctl create cluster \
+  --name <nombre_del_clúster> \
+  --version <version> \
+  --region <región> \
+  --nodegroup-name <nombre_del_grupo_de_nodos> \
+  --node-type <tipo_de_instancia> \
+  --nodes <número_de_nodos> \
+  --nodes-min <número_mínimo_de_nodos> \
+  --nodes-max <número_máximo_de_nodos> \
+  --managed
+```
+Ejemplo de modo imperativo para crear un clúster de Amazon EKS:
+```
+eksctl create cluster \
+  --name mi-cluster-eks \
+  --version 1.19 \
+  --region us-west-2 \
+  --nodegroup-name grupo-nodos-1 \
+  --node-type t3.medium \
+  --nodes 3 \
+  --nodes-min 2 \
+  --nodes-max 5 \
+  --managed
+```
+#### Customize eksctl with a configuration file
+Como se ha revisado anteriormente, puede crear un clúster utilizando un archivo de configuración en formato YAML en lugar de banderas, lo que le da más control sobre las opciones seleccionadas. El uso de un archivo de configuración también hace que el proceso de creación de un clúster sea declarativo en lugar de imperativo. eksctl traduce las instrucciones de su archivo de configuración a plantillas equivalentes de CloudFormation. Puedes poner tus archivos de configuración en control de código fuente igual que haces con otros activos como plantillas de CloudFormation o archivos de automatización de Terraform.
+
+Traducción realizada con la versión gratuita del traductor DeepL.com
+
 
 ## Referencias
 - [The official CLI for Amazon EKS](https://eksctl.io)
