@@ -74,9 +74,9 @@ eksctl create cluster \
   --managed
 ```
 #### Customize eksctl with a configuration file
-Como se ha revisado anteriormente, puede crear un clúster utilizando un archivo de configuración en formato YAML en lugar de banderas, lo que le da más control sobre las opciones seleccionadas. El uso de un archivo de configuración también hace que el proceso de creación de un clúster sea declarativo en lugar de imperativo. eksctl traduce las instrucciones de su archivo de configuración a plantillas equivalentes de CloudFormation. Puedes poner tus archivos de configuración en control de código fuente igual que haces con otros activos como plantillas de CloudFormation o archivos de automatización de Terraform.
-
-Traducción realizada con la versión gratuita del traductor DeepL.com
+- Como se ha revisado anteriormente, es posible crear un clúster utilizando un archivo de configuración en formato YAML en lugar de banderas, lo que da más control sobre las opciones seleccionadas. 
+- El uso de un archivo de configuración también hace que el proceso de creación de un clúster sea **declarativo** en lugar de **imperativo**. 
+- **eksctl** traduce las instrucciones del archivo de configuración a plantillas equivalentes de CloudFormation. Es posible poner los archivos de configuración en control de código fuente igual que como se hace con otros activos como plantillas de CloudFormation o archivos de automatización de Terraform.
 
 
 ## Referencias
