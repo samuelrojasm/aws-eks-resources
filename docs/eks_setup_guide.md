@@ -206,7 +206,7 @@ terraform init
 terraform apply
 ```
 
-
 ## Referencias
 - [The official CLI for Amazon EKS](https://eksctl.io)
 - [Getting started with Amazon EKS – eksctl](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html)
+- [eksctl repository on GitHub](https://github.com/eksctl-io/eksctl)
