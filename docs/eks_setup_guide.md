@@ -1,6 +1,7 @@
 # Guía de Configuración de EKS (Amazon Elastic Kubernetes Service)
 Esta guía proporciona los pasos necesarios para configurar un clúster de Amazon EKS. Se cubrirán los siguientes aspectos:
 - Requisitos previos
+- Creación del cluser con eksctl
 - Configuración de EKS usando la consola de AWS
 - Configuración de EKS usando AWS CLI
 - Configuración de EKS usando Terraform
@@ -152,7 +153,7 @@ aws eks create-nodegroup \
   --scaling-config minSize=1,maxSize=3,desiredSize=2
 ```
 
-## Creación del cluster con (IaC)
+## 4. Creación del cluster con (IaC)
 Es posible usar **Terraform** para gestionar infraestructura, a continuación un ejemplo básico de configuración para crear un clúster EKS:
 ### Paso 1: Crear un archivo main.tf
 Este archivo crea el clúster EKS y el grupo de nodos usando Terraform.
