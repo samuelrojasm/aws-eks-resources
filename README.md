@@ -4,6 +4,10 @@
 - Está pensado en automatizar el aprovisionamiento, escalado, seguridad y otras tareas comunes en un clúster de Kubernetes sobre AWS.
 - Este repositorio tiene como objetivo proporcionar scripts, plantillas de Terraform, configuraciones de Helm, y otros recursos útiles para interactuar y gestionar clústeres de Amazon EKS.
 
+## Contenido
+- [Guía de Configuración de Amazon EKS](https://github.com/samuelrojasm/aws-eks-resources/blob/main/docs/eks_setup_guide.md)
+- [Comandos eksctl](https://github.com/samuelrojasm/aws-eks-resources/blob/main/docs/eksctl-commands.md)
+
 ## Referencias
 - [Conceptos de kubernetes](https://kubernetes.io/docs/concepts/overview/components/)
 - [CNCF landscape](https://landscape.cncf.io/)
