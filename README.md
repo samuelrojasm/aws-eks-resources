@@ -5,7 +5,7 @@
 - Este repositorio tiene como objetivo proporcionar scripts, plantillas de Terraform, configuraciones de Helm, y otros recursos útiles para interactuar y gestionar clústeres de Amazon EKS.
 
 ## Contenido
-- [Guía de Configuración de Amazon EKS](https://github.com/samuelrojasm/aws-eks-resources/blob/main/docs/eks_setup_guide.md)
+- [Guía de configuración de Amazon EKS](https://github.com/samuelrojasm/aws-eks-resources/blob/main/docs/eks_setup_guide.md)
 - [Comandos eksctl](https://github.com/samuelrojasm/aws-eks-resources/blob/main/docs/eksctl-commands.md)
 
 ## Referencias
