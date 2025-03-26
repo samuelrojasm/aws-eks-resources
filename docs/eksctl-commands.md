@@ -10,3 +10,4 @@ Este archivo contiene una lista organizada de comandos útiles de ekscl para ges
 ## Gestión de Recursos de Kubernetes
 ### Gestionar fargate
 - `eksctl get fargateprofile --cluster ${clusterName}` *(Get the Fargate profile of the cluster)*
+
